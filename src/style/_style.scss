@@ -1,0 +1,17 @@
+html,
+body {
+  font-family: $main-font, sans-serif;
+  font-size: $standart-font-size;
+  background-color: $black;
+  color: $seashel;
+}
+
+.wrapper {
+  overflow: hidden;
+  min-height: 100%;
+}
+.container {
+  max-width: $container-width;
+  margin: 0 auto;
+  padding: 0px 15px;
+}
