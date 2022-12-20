@@ -67,7 +67,8 @@ body {
   transition: all 0.2s ease-out;
 }
 
-.form__item input:focus ~ label {
+.form__item input:focus ~ label,
+.value-exist ~ label {
   top: -25px;
   left: 50px;
   font-family: $regular-font;
