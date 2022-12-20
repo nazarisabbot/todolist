@@ -41,6 +41,8 @@ textarea {
 }
 input::-ms-clear {
   display: none;
+  border: none;
+  outline: none;
 }
 input,
 label {
@@ -78,4 +80,6 @@ h5,
 h6 {
   font-size: inherit;
   font-weight: 400;
+  padding: 0;
+  margin: 0;
 }

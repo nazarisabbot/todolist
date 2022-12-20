@@ -4,11 +4,56 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Webpack</title>
+    <title>To Do List</title>
   </head>
   <body>
     <div class="wrapper">
-      <div class="content"></div>
+      <div class="form__block">
+        <div class="container">
+          <div class="form__items">
+            <form class="form__main" action="POST">
+              <div class="form__item">
+                <input type="text" name="title" id="title" />
+                <label for="name">Title:</label>
+              </div>
+              <div class="form__item">
+                <input type="text" name="task" id="task" />
+                <label for="task">Task:</label>
+              </div>
+              <button type="submit">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="task__block">
+        <div class="container">
+          <div class="task__items">
+            <div class="task__title">
+              <h1>Where does it come from?</h1>
+            </div>
+            <div class="task__artical">
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book. It has
+                survived not only five centuries, but also the leap into
+                electronic typesetting, remaining essentially unchanged.
+              </p>
+            </div>
+            <div class="task__button">
+              <p>Delete</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="footer_row">
+          <div class="footer__text">
+            <p>nazarisabbot ⓟ</p>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>
