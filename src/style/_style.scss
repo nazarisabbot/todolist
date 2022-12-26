@@ -22,12 +22,12 @@ body {
 
 .form__block {
   flex: 0 1 auto;
-  margin: 100px;
+  margin: 50px;
 }
 
 .form__items {
-  width: 700px;
-  padding: 65px 0px;
+  width: 500px;
+  padding: 25px 0px;
   border: 1px solid $blue;
   border-radius: 28px;
   background-color: $white;
@@ -36,6 +36,23 @@ body {
 .form__main {
   display: flex;
   flex-direction: column;
+  align-items: center;
+}
+
+.form__main button {
+  padding: 10px 20px 10px 20px;
+  text-align: center;
+  font-family: $regular-font;
+  font-size: $light-font-size;
+  font-weight: $light;
+  color: $white;
+  background-color: $blue;
+  border-radius: 28px;
+  transition: all 0.2s ease-out;
+}
+
+.form__main button:hover {
+  background-color: $pink;
 }
 
 .form__item {
@@ -43,13 +60,12 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0 55px;
   margin: 30px 0px;
 }
 
 .form__item input {
   border-bottom: 2px solid $blue;
-  width: 100%;
+  width: 400px;
   font-family: $regular-font;
   font-size: $light-font-size;
   font-weight: $light;
@@ -59,10 +75,10 @@ body {
 .form__item label {
   position: absolute;
   top: -15px;
-  left: 50px;
+  left: 0px;
   display: inline-block;
   font-family: $regular-font;
-  font-size: $large-font;
+  font-size: $light-font-size;
   font-weight: $bold;
   transition: all 0.2s ease-out;
 }
@@ -70,7 +86,7 @@ body {
 .form__item input:focus ~ label,
 .value-exist ~ label {
   top: -25px;
-  left: 50px;
+  left: 0px;
   font-family: $regular-font;
   font-size: $light-font-size;
   font-weight: $light;
@@ -78,6 +94,51 @@ body {
 
 .task__block {
   flex: 1 1 auto;
+}
+
+.task__items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid $pink;
+  border-radius: 24px;
+  max-width: 1500px;
+  margin: 0 0 25px 0;
+  padding: 25px;
+}
+
+.task__items h1 {
+  margin-bottom: 25px;
+  text-align: center;
+  font-family: $regular-font;
+  font-size: $large-font;
+  font-weight: $bold;
+  color: $grey;
+}
+
+.task__items p {
+  margin-bottom: 25px;
+  text-align: left;
+  font-family: $regular-font;
+  font-size: $light-font-size;
+  font-weight: $light;
+  color: $grey;
+}
+
+.task__items button {
+  padding: 10px 20px 10px 20px;
+  text-align: center;
+  font-family: $regular-font;
+  font-size: $light-font-size;
+  font-weight: $light;
+  color: $white;
+  background-color: $blue;
+  border-radius: 28px;
+  transition: all 0.2s ease-out;
+}
+
+.task__items button:hover {
+  background-color: $pink;
 }
 
 .footer {
